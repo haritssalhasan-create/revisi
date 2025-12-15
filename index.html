@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>resttaurant ayam geprek socienty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      
+
+
+  </head>
+  <body>
+  <header class="bg-gray-800 text-white sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center p-4">
+
+    <h1 class="text-2xl font-bold">RESTTAURANT AYAM GEPREK SOCIENTY</h1>
+
+   
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-yellow-600">home</a>
+      <a href="#about" class="hover:text-yellow-600">about</a>
+      <a href="#order" class="hover:text-yellow-600">order</a>
+      <a href="#contact" class="hover:text-yellow-600">contact</a>
+
+      
+      <div class="relative">
+        <button id="dropdownBtn" 
+          class="inline-flex items-center gap-x-2 bg-white px-4 py-2 rounded-md 
+                 text-sm font-semibold text-yellow-600 shadow hover:bg-gray-100">
+          daftar menu
+          <svg id="dropdownIcon" viewBox="0 0 20 20" fill="currentColor"
+              class="size-5 text-red-800 transition-transform duration-300">
+            <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/>
+          </svg>
+        </button>
+
+        <div id="dropdownMenu"
+          class="absolute right-0 mt-2 w-52 bg-white rounded-md shadow-lg opacity-0 scale-95 
+                 pointer-events-none transition-all duration-200 origin-top">
+
+          <a href="#menu ayam geprek" class="block px-4 py-2 text-sky-600 hover:text-yellow-600">menu ayam geprek</a>
+          <a href="#menu minuman" class="block px-4 py-2 text-sky-600 hover:text-yellow-600">menu minuman</a>
+          <a href="#menu camilan" class="block px-4 py-2 text-sky-600 hover:text-yellow-600">menu camilan</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <button id="hamburgerBtn" class="text-3xl md:hidden">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  
+  <div id="mobileMenu"
+    class="md:hidden bg-gray-700 text-white space-y-4 px-6 py-4 hidden">
+
+    <a href="#home" class="block hover:text-yellow-400">home</a>
+    <a href="#about" class="block hover:text-yellow-400">about</a>
+    <a href="#order" class="block hover:text-yellow-400">order</a>
+    <a href="#contact" class="block hover:text-yellow-400">contact</a>
+
+    <p class="font-bold mt-4">Daftar menu:</p>
+    <a href="#menu ayam geprek" class="block hover:text-yellow-400">menu ayam geprek</a>
+    <a href="#menu minuman" class="block hover:text-yellow-400">menu minuman</a>
+    <a href="#menu camilan" class="block hover:text-yellow-400">menu camilan</a>
+  </div>
+</header>
+
+    <section
+      id="home"
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('./rstnt.jpg')"
+
+    >
+      <div class="h-full   flex flex-col justify-center items-center text-center
+      text-white">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 text-red-700">SELAMAT DATANG <span class="text-orange-400">RESTTAURANT AYAM GEPREK SOCIENTY</span></h2>
+        <p class="text-lg md:text-3xl mb-6 text-sky-400">enak dan bikin ketagihan</p>
+        <div class="flex gap-4">
+   <a href="#order"
+     class="bg-yellow-400 text-gray-800 px-6 py-3 
+            rounded-es-full rounded-se-full
+          hover:rounded-ss-full hover:rounded-ee-full
+          transition-all duration-700">
+    pesan sekarang
+  </a>
+
+
+
+</div>
+
+      </div>
+    </section>
+    </section>
+
+
+
+    <section id="menu ayam geprek" class="py-16 bg-gray-100 "style="background-image: url('./spr.png')">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8 text-white"> menu ayam geprek</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow rounded">
+              <img src="smblijo.jpg"" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">AYAM GEPREK SAMBAL HIJAU</h3>
+              <p class="text-gray-600 mb-4">Ayam goreng crispy yang digeprek hingga lembut,
+                 kemudian disiram dengan sambal hijau segar yang dibuat dari cabai hijau pilihan,
+                  tomat hijau, bawang aromatik, dan perasan jeruk limau.
+                 Menghasilkan perpaduan rasa pedas segar, gurih, dan sedikit asam yang bikin nagih.</p>
+              <p class="text-yellow-600 font-bold">rp.12.000</p>
+            </div>
+            <div class="bg-white p-6 shadow rounded">
+              <img src="smblbwg.jpg"" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">AYAM GEPREK SAMBAL BAWANG</h3>
+              <p class="text-gray-600 mb-4">
+                Ayam goreng tepung yang digeprek dengan sambal bawang segar yang dibuat dari bawang putih, cabai pilihan, dan minyak panas aromatik.
+                 Rasanya pedas, gurih, dan wangi menghadirkan cita rasa sederhana khas rumahan namun tetap kuat dan nikmat.</p>
+              <p class="text-yellow-600 font-bold">rp.12.000</p>
+            </div>
+            <div class="bg-white p-6 shadow rounded">
+              <img src="smblmth.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">AYAM GEPREK SAMBAL MATAH</h3>
+              <p class="text-gray-600 mb-4">Ayam goreng renyah yang digeprek lembut lalu disajikan dengan sambal matah khas Bali.
+                 Terbuat dari irisan bawang merah segar, cabai rawit, serai, daun jeruk, dan siraman minyak panas yang harum.
+                  Rasanya pedas segar, wangi, dan sedikit citrus, memberikan sensasi berbeda dari geprekan biasa—lebih ringan, segar, dan menggugah selera.
+                 Menghasilkan perpaduan rasa pedas segar, gurih, dan sedikit asam yang bikin nagih.</p>
+              <p class="text-yellow-600 font-bold">rp.12.000</p>
+              </div>
+      </div>
+    </section>
+    <section id="menu minuman" class="py-16 bg-gray-100 " style="background-image: url('./spr.png')">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8 text-white"> minuman</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow rounded">
+              <img src="matchalatte.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">matchalatte</h3>
+              <p class="text-gray-600 mb-4">
+                Perpaduan sempurna antara bubuk matcha berkualitas dengan susu yang creamy, menghasilkan rasa lembut, sedikit manis, dan aroma khas teh hijau yang menenangkan.
+                 Matcha Latte cocok untuk kamu yang ingin minuman segar namun tetap menenangkan, dengan cita rasa Jepang yang autentik.</p>
+              <p class="text-yellow-600 font-bold">rp.7.000</p>
+            </div>
+            <div class="bg-white p-6 shadow rounded">
+              <img src="americano.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">AMERICANO</h3>
+              <p class="text-gray-600 mb-4">Minuman kopi sederhana namun penuh karakter, dibuat dari espresso yang dipadukan dengan air panas.
+                 Rasanya ringan namun tetap memiliki aroma kopi yang kuat dan bersih.
+                 Americano cocok untuk pecinta kopi yang ingin menikmati cita rasa espresso tanpa rasa yang terlalu berat.</p>
+              <p class="text-yellow-600 font-bold">rp.7.000</p>
+            </div>
+             <div class="bg-white p-6 shadow rounded">
+              <img src="capuchino.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">CAPUCINO</h3>
+              <p class="text-gray-600 mb-4">Minuman kopi klasik yang menggabungkan espresso pekat, susu panas yang lembut, dan lapisan foam halus di atasnya. 
+                Perpaduan rasa pahit, creamy, dan aroma kopi yang kuat menciptakan pengalaman minum yang seimbang dan menenangkan. 
+                Cocok dinikmati kapan saja untuk menambah fokus atau sekadar menemani waktu santai.</p>
+              <p class="text-yellow-600 font-bold">rp.7.000</p>
+            </div>
+           </div>
+           </div>
+           </section>
+            <section id="menu camilan" class="py-16 bg-gray-100 " style="background-image: url('./spr.png')">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-8 text-white"> camilan</h2>
+          <div class="grid md:grid-cols-3  gap-6">
+           <div class="bg-white p-6 shadow rounded">
+              <img src="risolmayo.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">risol mayo</h3>
+              <p class="text-gray-600 mb-4">
+                Risol mayo adalah camilan berbentuk gulungan yang dibuat dari kulit risol berisi campuran sosis atau smoked beef,
+                 telur rebus, dan mayones. Setelah digulung, risol dilapisi tepung panir lalu digoreng hingga keemasan.
+                 Rasanya creamy, gurih, dan sedikit manis dari mayonesnya.</p>
+                 <p> isi 5 biji</p>
+              <p class="text-yellow-600 font-bold">rp.10.000</p>
+            </div>
+             <div class="bg-white p-6 shadow rounded">
+              <img src="kentanggrng.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2">kentang goreng</h3>
+              <p class="text-gray-600 mb-4">
+                Kentang goreng adalah makanan ringan yang dibuat dari potongan kentang yang digoreng hingga renyah.
+                 Biasanya diberi garam, kadang juga disajikan dengan saus seperti sambal, mayones, atau keju. 
+                 Rasanya gurih dan renyah di luar, lembut di dalam.
+                  Ini termasuk camilan atau pendamping fast food yang paling populer di dunia.</p>
+              <p class="text-yellow-600 font-bold">rp.10.000</p>
+            </div>
+             <div class="bg-white p-6 shadow rounded">
+              <img src="burger.jpg" alt="gprk" class="w-100 h-100 object-cover rounded mb-4">
+              <h3 class="text-xl font-bold mb-2 ">burger</h3>
+              <p class="text-gray-600 mb-4">
+                Burger adalah makanan cepat saji yang terdiri dari roti bundar (bun)
+                 yang diisi dengan daging—biasanya daging sapi,
+                 ayam, atau kadang diganti patty sayur.
+                 Di dalamnya sering ditambah selada, tomat, keju, acar, bawang, dan saus seperti mayo atau saus spesial. 
+                Rasanya kombinasi gurih, juicy, dan lembut dari rotinya.</p>
+              <p class="text-yellow-600 font-bold">rp.10.000</p>
+            </div>
+           </div>
+        </div>
+    </section>
+    <section id="order" class="py-16 bg-gray-400" style="background-image: url(SPRGPCH.png);">
+  <div class="container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">Order Sekarang</h2>
+
+    
+    <div class="max-w-xl mx-auto bg-white p-6 shadow rounded">
+
+      
+      <label class="font-semibold text-gray-700">Pilih Menu</label>
+      <select id="orderMenu"
+        class="w-full mt-2 p-3 border rounded focus:ring-2 focus:ring-yellow-500">
+        <option value="Ayam Geprek">Ayam Geprek</option>
+        <option value="Ayam Geprek Sambal Hijau">Ayam Geprek Sambal Hijau</option>
+        <option value="Ayam Geprek Sambal bawang">Ayam Geprek Sambal bawang</option>
+        <option value="Ayam Geprek Sambal bawang">Ayam Geprek Sambal matah</option>
+       <option value="Minuman">Minuman</option>
+       <option value="minuman">matchalatte</option>
+        <option value="minuman">Americano</option>
+        <option value="minuman">capuchino</option>
+        <option value="camilan">camilan</option>
+        <option value="camilan">risol mayo</option>
+        <option value="camilan">kentang goreng</option>
+        <option value="camilan">Burger</option>
+      </select>
+ 
+     
+      <label class="font-semibold text-gray-700 mt-4 block">Jumlah</label>
+      <input id="orderJumlah" type="number" min="1" value="1"
+        class="w-full mt-2 p-3 border rounded focus:ring-2 focus:ring-yellow-500">
+
+      
+      <label class="font-semibold text-gray-700 mt-4 block">Catatan (optional)</label>
+      <textarea id="orderCatatan"
+        class="w-full mt-2 p-3 border rounded focus:ring-2 focus:ring-yellow-500"
+        placeholder="Pedas sedang, tidak pakai nasi, dll..."></textarea>
+
+      
+      <button onclick="sendOrder()"
+        class="mt-6 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 rounded-md shadow-lg transition">
+        Order via WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section id="about" class="py-16 bg-white" style="background-image: url('./SPRGPCH.png')">
+  <div class="container mx-auto grid md:grid-cols-2  gap-10 items-center px-6">
+    
+    
+    <div>
+      <img src="rstnt.jpg" 
+           alt="about" 
+           class="w-full h-80 object-cover rounded-xl shadow-lg">
+    </div>
+
+   
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">
+        Tentang <span class="text-red-700">Ayam Geprek Socienty</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Ayam Geprek Socienty adalah restoran yang menghadirkan sajian ayam geprek 
+        dengan berbagai varian sambal khas Nusantara. Dibuat dari bahan segar, 
+        bumbu rumahan, dan teknik masak yang menjaga cita rasa original.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Dengan konsep modern dan harga terjangkau, kami ingin memberikan pengalaman 
+        makan yang enak, cepat, dan bikin ketagihan untuk semua pelanggan.
+      </p>
+
+      
+    </div>
+     <div class="relative">
+  <button id="dropdownBtn"
+    class="inline-flex w-full justify-center gap-x-2 rounded-md bg-white px-4 py-2 
+           text-sm font-semibold text-gray-900 shadow hover:bg-gray-100 transition">
+    kunjungi berbagai menu kami
+
+    
+    <svg id="dropdownIcon" viewBox="0 0 20 20" fill="currentColor"
+         class="size-5 text-gray-400 transition-transform duration-300">
+      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"/>
+    </svg>
+  </button>
+
+  
+  <div id="dropdownMenu"
+    class="absolute right-0 mt-2 w-52 bg-white rounded-md shadow-lg opacity-0 scale-95 
+           pointer-events-none transition-all duration-200 origin-top">
+    
+    <a href="#menu ayam geprek" class="block px-4 py-2 text-black hover:text-yellow-600">menu ayam geprek</a>
+    <a href="#menu minuman" class="block px-4 py-2 text-black hover:text-yellow-600">menu minuman</a>
+    <a href="#menu desert" class="block px-4 py-2 text-black hover:text-yellow-600">menu desert</a>
+  </div>
+</div>
+
+    </div>
+    
+    </div>
+
+  </div>
+</section>
+   <section id="contact" class="py-16 bg-white" style="background-image: url('./SPRGPCH.png')">
+  <div class="container mx-auto px-6 md:px-0">
+
+    
+    <h2 class="text-3xl font-bold text-center mb-8 text-red-700">
+      Hubungi <span class="text-orange-500">Kami</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      
+      <div class="space-y-4">
+
+        <p class="text-gray-600">
+          Jika Anda memiliki pertanyaan, kritik, saran, atau ingin memesan,
+          silakan hubungi kami melalui kontak berikut:
+        </p>
+
+        <div class="space-y-2 text-gray-700">
+          <p><strong>📍 Alamat:</strong> Jl.raya kebonsari Gg.9 no.17, Kota malang</p>
+          <p><strong>📞 Telepon:</strong> 0812-9876-54321</p>
+          <p><strong>📱 WhatsApp:</strong> 0812-9876-54321</p>
+          <p><strong>📧 Email:</strong> ayamgepreksocienty@gmail.com</p>
+        </div>
+
+      </div>
+
+      
+      <form class="bg-gray-100 p-6 rounded shadow space-y-4">
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Nama</label>
+          <input type="text" class="w-full p-2 rounded border" placeholder="Nama Anda">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Email</label>
+          <input type="email" class="w-full p-2 rounded border" placeholder="Email Anda">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-1">Pesan</label>
+          <textarea class="w-full p-2 rounded border h-28" placeholder="Tulis pesan..."></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-md font-semibold
+                 hover:rounded-ss-full hover:rounded-ee-full
+                 hover:scale-105 hover:shadow-lg
+                 transition-all duration-300">
+          Kirim Pesan
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <script src="index.js"></script>
+    <script>
+      new Splide("#image-carousel").mount();
+    </script>
+   <footer class="bg-gray-800 text-white py-1">
+    <div class="container mx-auto text-center">
+      <p>&copy;RESTTAURANT AYAM GEPREK SOCIENTY 2025</p>
+    </div>
+   </footer>
+  </body>
+</html>
